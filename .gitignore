@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+# Qt Creator
+l-systems.config
+l-systems.creator
+l-systems.creator.user
+l-systems.creator.user.6d9f57e
+l-systems.files
+l-systems.includes
