@@ -124,8 +124,8 @@ int main(int argc, char* argv[])
         try {
             example_nr = std::stol(argv[1]);
         }
-        catch (const std::invalid_argument) {}
-        catch (const std::out_of_range) {}
+        catch (const std::invalid_argument&) {}
+        catch (const std::out_of_range&) {}
     }
     if (example_nr < 0) example_nr = 0;
     if (example_nr >= examples.size()) example_nr = examples.size() - 1;
