@@ -8,10 +8,10 @@ OBJECTS = main.o rulesystem.o turtle.o window.o
 all: l-systems
 
 l-systems: $(OBJECTS)
-	g++ -o $@ $^ $(SDL_LDFLAGS) -L$(SDL2PP_ROOT) -lSDL2pp
+	g++ -o $@ $^ $(SDL_LDFLAGS) -lSDL2pp
 
 .cpp.o:
-	$(CC) $(CFLAGS) $(SDL_CFLAGS) -I$(SDL2PP_ROOT) -c $< -o $@
+	$(CC) $(CFLAGS) $(SDL_CFLAGS) -c $< -o $@
 
 .PHONE clean:
 	rm $(OBJECTS) l-systems
